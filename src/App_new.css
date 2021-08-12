@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app-container{
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    height: 80vh;
+    margin: 3em auto 0 auto;
+    text-align: center;
+    background: url('./Assets/images/weather-background.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
