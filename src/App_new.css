@@ -14,8 +14,29 @@
     background: url('./Assets/images/weather-background.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
 
 
 
 }
+.header-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
 
+}
+.current-temp {
+    width: 100%;
+    height: 70%;
+}
+.weather-content {
+    height: 50%;
+    width: 100%;
+
+}
+.tab-wrapper {
+    width: 100%;
+    padding:1em;
+}

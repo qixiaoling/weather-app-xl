@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import WeatherDetail from "../../Components/WeatherDetail/WeatherDetail";
 import createTimeString from "../../helper/createTimeString";
-
+import './TodayTab.css';
 const apiKey = 'b7ae113310db05940950e41fd1692a30'
 
 function TodayTab({coordinates}) {
@@ -38,7 +38,7 @@ function TodayTab({coordinates}) {
     }, [coordinates])
 
     return (
-        <div className="tab-wrapper">
+        <div className="today-tab-wrapper">
             {todayForecast &&
             <>
                 <div className="chart">

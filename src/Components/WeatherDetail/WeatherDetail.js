@@ -1,4 +1,5 @@
 import React from 'react';
+import './WeatherDetail.css'
 import kelvinToCelcius from "../../helper/kelvinToCelcius";
 import iconMapper from "../../helper/icons/iconMapper";
 

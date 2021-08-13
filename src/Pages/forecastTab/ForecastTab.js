@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from "axios";
+import './ForecastTab.css'
 import kelvinToCelcius from "../../helper/kelvinToCelcius";
 import createDateString from "../../helper/createDateString";
 const apiKey = 'b7ae113310db05940950e41fd1692a30'
@@ -33,7 +34,7 @@ function ForecastTab({coordinates}) {
 
 
     return (
-        <div className="tab-wrapper">
+        <div className="forecast-tab-wrapper">
             {forecasts && forecasts.map((forecast) => {
                 return (
                     <article className="forecast-day" key={forecast.dt}>

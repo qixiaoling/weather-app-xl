@@ -1,0 +1,17 @@
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+}
+.tab-bar a,
+.tab-bar a:visited {
+    list-style: none;
+    text-decoration: none;
+}
+.tab-bar a.active {
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+/*注意到这里用了Router里特别的！！！NAVLINK！！！里的独有特性 activeClassName!!!*/

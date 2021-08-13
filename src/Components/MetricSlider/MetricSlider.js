@@ -2,7 +2,7 @@ import React from 'react';
 function MetricSlider() {
     return(
         <>
-            <h1>Metric Slider</h1>
+            <h4>Metric Slider</h4>
         </>
     )
 
