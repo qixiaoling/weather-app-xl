@@ -43,33 +43,33 @@ function App() {
             <div className='header-container'>
                 <SearchBar setLocationChild={setLocation}/>
                 {error && /*在最底下写error*/
-                <span>
-                <p>Oops, this location does not exist.</p>
-            </span>
+                    <span>
+                        <p>Oops, this location does not exist.</p>
+                     </span>
                 }
                 {loading &&
-                <span>
-                <p>Loading</p>
-            </span>}
+                    <span>
+                         <p>Loading</p>
+                    </span>
+                }
                 <span>
                 {weatherData &&
-                <>
+                <div className='current-temp'>
                     <h2>{weatherData.weather[0].description}</h2>
                     <h3>{weatherData.name}</h3>
                     <h1>{kelvinToCelcius(weatherData.main.temp)}</h1>
-                </>
+                </div>
                 }
-            </span>
-
-
+                </span>
             </div>
+
             <Router>
                 <div className='weather-content'>
                     <TabBarMenu/>
                     <div className='tab-wrapper'>
                         <Switch>
                             <Route exact path='/'>
-                                <TodayTab coordinates = {weatherData && weatherData.coord} />
+                                <TodayTab coordinates={weatherData && weatherData.coord}/>
                             </Route>
                             <Route path='/komende-week'>
                                 <ForecastTab coordinates={weatherData && weatherData.coord}/>
